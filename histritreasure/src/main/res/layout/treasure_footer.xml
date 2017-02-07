@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/footer_buttons"
+    android:layout_alignParentBottom="true"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    tools:ignore="Overdraw">
+    <!-- live button relative layout -->
+
+    <!-- run button relative layout -->
+    <!-- setup button relative layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button android:id="@+id/btnStartOnline"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ranking"
+            android:onClick="targeted_picture"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:background="@drawable/camera"
+            android:id="@+id/btnPause"
+            android:onClick="camera_frag"
+
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <Button
+            android:id="@+id/btnStopOnline"
+            android:background="@drawable/location"
+            android:layout_width="fill_parent"
+            android:onClick="location_frag"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_height="fill_parent" />
+        <Button
+            android:id="@+id/btnSalva"
+            android:background="@drawable/location"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:text="Stop"
+            android:onClick="go_back"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_height="fill_parent" />
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="100dp"
+            android:visibility="gone"
+            android:text="Stop"
+            android:onClick="go_back"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

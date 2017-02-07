@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tivoli">Tivoli</string>
+    <string name="beer_club">Beer Club</string>
+    <string name="puljanka">Puljanka</string>
+    <string name="set_location_failed">Failed to detect location</string>
+    <string name="set_location_failed_description">Consider moving to open area so the gps can track your location easier</string>
+    <string name="location_out_of_range">Location out of range</string>
+    <string name="location_out_of_range_alert">You can start the quiz once you are inside one of the institutions</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="no_internet_alert">To start the game you have to be connected to the internet</string>
+    <string name="no_gps">Please turn on gps</string>
+    <string name="no_gps_alert">This application uses location services</string>
+    <string name="no_gps_internet_alert">This application uses internet and location services</string>
+    <string name="inst_location_message">Visit institutions website?</string>
+    <string name="welcoming_header">Welcome to the:</string>
+    <string name="live_inst">\"When you find the clue we are looking for, take a picture of it, and if the picture matches proceed to the next clue\"</string>
+    <string name="process_text">Processing the image... this may take a while</string>
+    <string name="exit_header">Quit adventure?</string>
+    <string name="exit_body">Are you sure you want to exit? all your progress will be lost.</string>
+    <string name="no_internet_splash">No internet connection</string>
+    <string name="no_internet_body_splash">You have to turn on your wifi or mobile data in order to use this app</string>
+</resources>

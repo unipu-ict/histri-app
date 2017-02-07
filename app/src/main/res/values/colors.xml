@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#99B643</color>
+    <color name="colorButtonSelection">#9AB54B</color>
+    <color name="background">#000</color>
+    <color name="colorGray">#000</color>
+    <color name="trans">#00000000 </color>
+    <color name="black">#000 </color>
+    <color name="brown">#DAC684 </color>
+
+
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#16FF0000</color>
+</resources>

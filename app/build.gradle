@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.0'
+
+
+
+
+    defaultConfig {
+
+        /*jackOptions {
+            enabled true
+        }*/
+        applicationId "com.appspot.istria.histriapp"
+        minSdkVersion 15
+        targetSdkVersion 23
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+
+        debug{
+
+            buildConfigField "String", "URL_ENDPOINT_ALL_INST", "\"http://histriappspot.herokuapp.com/api/getinstitutions\""
+            buildConfigField "String", "URL_ENDPOINT_ALL_CLUES", "\"http://histriappspot.herokuapp.com/api/androidbackend\""
+            buildConfigField "String", "URL_TRANSLATE", "\"http://histriappspot.herokuapp.com/api/translate\""
+            buildConfigField "String", "VISION_API_KEY", "\"AIzaSyC-gksL80SBsNqFaScBuTEUm5i7v36buvg\""
+
+        }
+        release {
+            minifyEnabled false
+            buildConfigField "String", "URL_ENDPOINT_ALL_INST", "\"http://histriapp.appspot.com/api/getinstitutions\""
+            buildConfigField "String", "URL_ENDPOINT_ALL_CLUES", "\"http://histriapp.appspot.com/api/androidbackend\""
+            buildConfigField "String", "VISION_API_KEY", "\"AIzaSyC-gksL80SBsNqFaScBuTEUm5i7v36buvg\""
+            buildConfigField "String", "URL_TRANSLATE", "\"http://histriapp.appspot.com/api/translate\""
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+
+
+sourceSets.all { ext.purpose = null }
+
+sourceSets {
+    main {
+        purpose = "production"
+    }
+    test {
+        purpose = "test"
+    }
+    plugin {
+        purpose = "production"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    //compile files('libs/mint-5.2.1.jar')
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.android.support:multidex:1.0.1'
+    //compile 'com.google.firebase:firebase-core:9.8.0'
+    //compile 'com.google.firebase:firebase-storage:9.8.0'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'org.mongodb:mongo-java-driver:3.4.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.1.0'
+    compile 'com.android.support:multidex:1.0.1'
+
+   // compile 'com.firebaseui:firebase-ui-storage:0.6.0'
+    compile 'com.google.android.gms:play-services-maps:9.8.0'
+    compile 'com.google.android.gms:play-services-location:9.8.0'
+   compile 'com.google.api-client:google-api-client-android:1.20.0' exclude module: 'httpclient'
+    compile 'com.google.http-client:google-http-client-gson:1.20.0' exclude module: 'httpclient'
+    compile 'com.google.android.gms:play-services-vision:9.8.0'
+    compile 'com.google.apis:google-api-services-vision:v1-rev2-1.21.0'
+}
+apply plugin: 'com.google.gms.google-services'
+

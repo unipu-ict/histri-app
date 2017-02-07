@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/instructions_title_whole_page"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/introduction"
+            android:textSize="34sp"/>
+
+        <!--registration instructions-->
+        <TextView
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:id="@+id/instructions_title_first_page_registration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcoming_text"/>
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rules"/>
+
+        <!--bluetooth activation instructions-->
+
+
+        <!--your running story instructions-->
+        <TextView
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:id="@+id/instructions_title_first_page_your_running_your_story"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/usage_text"/>
+    </LinearLayout>
+</ScrollView>
+    </RelativeLayout>

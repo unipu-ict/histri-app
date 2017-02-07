@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer_end_instructions">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/instructions_title_whole_page"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/instructions"
+                android:textSize="30dp"/>
+
+            <!--your story instructions-->
+            <TextView
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:id="@+id/instructions_title_third_page_your_running_your_story"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/your_story"/>
+            <TextView
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/treasure_hunt_explanaition"/>
+
+            <!--your story instructions-->
+            <TextView
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:id="@+id/instructions_title_third_page_comparison"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/prices"/>
+            <TextView
+                android:padding="10dp"
+                android:textColor="@color/black"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/prices_text"/>
+        </LinearLayout>
+    </ScrollView>
+    <!--end instructions button-->
+    <LinearLayout
+        android:id="@+id/footer_end_instructions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:text="@string/end_instructions"
+            android:layout_weight="1"
+            android:background="@color/colorButtonSelection"
+            android:textColor="@color/black"
+            android:onClick="end_instructions_click"/>
+    </LinearLayout>
+
+</RelativeLayout>
